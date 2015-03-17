@@ -14,33 +14,25 @@ Game start :	MArch 16 2015
     <h3>Do you want to put a new underline in my graph?</h3>
 	
     <div></div>
-    <input type="button" onclick="chooseYes()" value="Yes"/>
+    <button onclick="chooseYes()">Yes</button>
     <input type="button" onclick="chooseOne('No')" value="No"/>
     <script>
     // Willyd trying hard to get used to commiting
-    // Yes or no to my question
+    // Yes or no to my quuestion
 
     function chooseYes() {
 	var clickYes = prompt("Enter which line you'd like", "Line of graph");
+	console.log("FUCK");
 	if (clickYes != null) {
-		<h3>This is a test</h3>
+		console.log("This is a test");
 	}
-    }
-		
-      // We'll choose one of n; this sets n
-      var n = thisClass.length;
-
-      // Pick one at random
-      var which = Math.floor(Math.random() * n);
-
-      // Set string with value of result
-      var result = 'Chosen: ' + thisClass[which];
+    } 
 
       // Clear out the div, and then fill it with fresh
       // This is the wonderful, invisible work of jQuery
       $('#output').empty(); 
       $('#output').append('<pre>' + result + '</pre>');
-      }
+      
   </script>
 <div id="output"></div>
 </body>
