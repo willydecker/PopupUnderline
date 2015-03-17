@@ -12,27 +12,21 @@ Game start :	MArch 16 2015
 </head>
 <body>
     <h3>Do you want to put a new underline in my graph?</h3>
+	
     <div></div>
-    <input type="button" onclick="chooseOne('6 Sided Die')" value="6 Sided Die"/>
-    <input type="button" onclick="chooseOne('12 Sided Die')" value="12 Sided Die"/>
+    <input type="button" onclick="chooseYes()" value="Yes"/>
+    <input type="button" onclick="chooseOne('No')" value="No"/>
     <script>
     // Willyd trying hard to get used to commiting
-    // choose a die and get rollin	
+    // Yes or no to my question
 
-    // Course rosters object
-    // Note: It's an array of objects, each of which is a map
-    //		and the value for each map is an array of names
-
-    var courses = { "6 Sided Die": ['1','2','3','4','5','6'],
-    	"12 Sided Die" : ['1','2','3','4','5','6','7','8','9','10','11','12']
+    function chooseYes() {
+	var clickYes = prompt("Enter which line you'd like", "Line of graph");
+	if (clickYes != null) {
+		<h3>This is a test</h3>
+	}
     }
- 
-
-    function chooseOne(course) {
-
-      // Choose appropriate element from courses array
-      var thisClass = courses[course];
-
+		
       // We'll choose one of n; this sets n
       var n = thisClass.length;
 
