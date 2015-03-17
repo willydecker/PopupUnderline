@@ -15,19 +15,22 @@ Game start :	MArch 16 2015
 	
     <div></div>
     <button onclick="chooseYes()">Yes</button>
-    <input type="button" onclick="chooseOne('No')" value="No"/>
+    <input type="button" onclick="chooseNo()" value="No"/>
     <script>
     // Willyd trying hard to get used to commiting
     // Yes or no to my quuestion
 
-    function chooseYes() {
-	var clickYes = prompt("Enter which line you'd like", "Line of graph");
-	console.log("FUCK");
-	if (clickYes != null) {
-		console.log("This is a test");
+	function chooseYes() {
+		var clickYes = prompt("Enter which line you'd like", "Line of graph");
+		console.log("FUCK");
+		if (clickYes != null) {
+			console.log("This is a test");
+		}
+	} 
+	
+	function chooseNo() {
+		alert("THEN YOU HAVE NO USE FOR MY CODE!");
 	}
-    } 
-
       // Clear out the div, and then fill it with fresh
       // This is the wonderful, invisible work of jQuery
       $('#output').empty(); 
