@@ -15,5 +15,9 @@ function dataTable(data) {
   });
   return [headers].concat(body);
 }
+//exporting for use in <pre>
+module.exports.drawTable = drawTable;
+module.exports.dataTable = dataTable;
+module.exports.PPVS = PPVS;
 
 print(drawTable(dataTable(PPVS)));
