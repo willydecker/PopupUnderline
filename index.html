@@ -12,16 +12,12 @@ Game start :	MArch 16 2015
   <script type="text/javascript" src="UnderlinedCell.js"></script>
   <script type="text/javascript" src="PP.js"></script>
   <script type="text/javascript" src="printData.js"></script>
-  
     <title>Hello!</title>
 </head>
 <body>
     <h3>Do you want to put a new underline in my graph?</h3>
 	<div></div>
-	//this is the spot to put the graph
-	<pre>
 	<div id="tablePrint"> </div>	
-	</pre>
     <div></div>
     <button onclick="chooseYes()">Yes</button>
     <input type="button" onclick="chooseNo()" value="No"/>
@@ -37,6 +33,8 @@ Game start :	MArch 16 2015
 		if (answer != null) {
 			console.log("This is a test");
 		}
+		$('#tablePrint').empty();
+		$('#tablePrint').append('<pre>' + result + '</pre>');
 	} 
 	
 	function chooseNo() {
