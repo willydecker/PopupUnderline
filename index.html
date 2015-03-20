@@ -44,18 +44,23 @@ Game start :	MArch 16 2015
 	} 
 	
 	function addRow(answer) {
-		if (answer = 1)
-		console.log(answer);
-			if (!document.getElementsByTagName) return;
-         		tabBody=document.getElementsByTagName("TBODY").item(0);
-         		row=document.createElement("TR");
+		var rowCount=PPVS.rows.length;
+		var row = PPVS.insertRow(answer);
+		var cell = row.insertCell(0);
+		var element = document.createElement("input");
+		cell1.appendChild(element1);
+	}
+	
+	/*function addRow(answer) {
+         		tabBody = document.getElementsByTagName("TBODY").item(0);
+         		row = document.createElement("TR");
         		cell1 = document.createElement("TD");
-         		textnode1=document.createTextNode(answer);
+         		textnode1 = document.createTextNode(answer);
          		cell1.appendChild(textnode1);
          		row.appendChild(cell1);
          		tabBody.appendChild(row);
 		}
-		
+	*/	
 	function chooseNo() {
 		alert("THEN YOU HAVE NO USE FOR MY CODE!");
 	}
