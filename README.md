@@ -1,3 +1,11 @@
+William Decker
+CMP237
+FancyCells
+How to run: (node app.js) in terminal
+            go to webpage localhost:8001
+            click either yes or no and follow onscreen instructions
+
+
 # PopupUnderline
 Uses popups to set if the user wants an underline and also where.
 
