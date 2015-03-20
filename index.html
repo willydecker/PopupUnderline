@@ -43,7 +43,7 @@ Game start :	MArch 16 2015
 		}
 	} 
 	function addRow(answer) {
-		var tbl = document.getElementById('#tablePrint'); // table reference
+		var tbl = document.getElementById('#tablePrint').innerHTML; // table reference
         	var row = tbl.insertRow(0)/*(tbl.rows.length)*/;       // append table row
         	var i;
     	// insert table cells to the new row
