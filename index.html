@@ -37,7 +37,13 @@ Game start :	MArch 16 2015
 	
 	function chooseYes() {
 		var answer = prompt("Enter which line you'd like", "Line of graph");
-		function addRow(content) {
+		
+		if (answer != null) {
+			return answer;
+		}
+	} 
+	
+	function addRow(content) {
 			if (!document.getElementsByTagName) return;
          		tabBody=document.getElementsByTagName("TBODY").item(0);
          		row=document.createElement("TR");
@@ -47,11 +53,7 @@ Game start :	MArch 16 2015
          		row.appendChild(cell1);
          		tabBody.appendChild(row);
 		}
-		if (answer != null) {
-			console.log("This is a test");
-		}
-	} 
-	
+		
 	function chooseNo() {
 		alert("THEN YOU HAVE NO USE FOR MY CODE!");
 	}
