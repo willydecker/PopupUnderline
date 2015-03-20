@@ -1,8 +1,3 @@
-load('calcFuncs.js');
-load('drawFuncs.js');
-load('TextCell.js');
-load('UnderlinedCell.js');
-load('PP.js');
 function dataTable(data) {
   var keys = Object.keys(data[0]);
   var headers = keys.map(function(name) {
@@ -16,8 +11,9 @@ function dataTable(data) {
   return [headers].concat(body);
 }
 //exporting for use in <pre>
-module.exports.drawTable = drawTable;
-module.exports.dataTable = dataTable;
-module.exports.PPVS = PPVS;
+//module.exports.drawTable = drawTable;
+//module.exports.dataTable = dataTable;
+//module.exports.PPVS = PPVS;
 
-print(drawTable(dataTable(PPVS)));
+//print(drawTable(dataTable(PPVS)));
+var result = drawTable(dataTable(PPVS));
