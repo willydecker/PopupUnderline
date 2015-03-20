@@ -10,6 +10,3 @@ var PPVS = [
 	{"name": "Extreme Rules", "debut": "06/7/09", "# of Matches": 11},
 	{"name": "Money in the Bank", "debut": "07/18/10", "# of Matches": 9}
 	];
-
-if (typeof module != "undefined" && module.exports)
-	module.exports = PPVS;
