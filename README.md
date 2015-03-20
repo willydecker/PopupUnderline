@@ -1,3 +1,5 @@
+
+# PopupUnderline
 William Decker
 CMP237
 FancyCells
@@ -6,7 +8,6 @@ How to run: (node app.js) in terminal
             click either yes or no and follow onscreen instructions
 
 
-# PopupUnderline
 Uses popups to set if the user wants an underline and also where.
 
 Click the Yes button to pull up a popup which allows the user to input which line they want to put a underline in.
