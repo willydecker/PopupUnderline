@@ -28,6 +28,11 @@ Game start :	MArch 16 2015
     // Yes or no to my quuestion
 	var misc = require('./misc');
 	document.getElementById('tablePrint').innerHTML = misc.PPVS;
+	//attempt at autorun
+	window.onload = function(){
+		$('#tablePrint').empty();
+		$('#tablePrint').append('<pre>' + result + '</pre>');
+	};
 	
 	function chooseYes() {
 		var answer = prompt("Enter which line you'd like", "Line of graph");
