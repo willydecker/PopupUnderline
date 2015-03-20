@@ -37,12 +37,19 @@ Game start :	MArch 16 2015
 	
 	function chooseYes() {
 		var answer = prompt("Enter which line you'd like", "Line of graph");
-		console.log("FUCK");
+		function addRow(content) {
+			if (!document.getElementsByTagName) return;
+         		tabBody=document.getElementsByTagName("TBODY").item(0);
+         		row=document.createElement("TR");
+        		cell1 = document.createElement("TD");
+         		textnode1=document.createTextNode(content);
+         		cell1.appendChild(textnode1);
+         		row.appendChild(cell1);
+         		tabBody.appendChild(row);
+		}
 		if (answer != null) {
 			console.log("This is a test");
 		}
-		$('#tablePrint').empty();
-		$('#tablePrint').append('<pre>' + result + '</pre>');
 	} 
 	
 	function chooseNo() {
