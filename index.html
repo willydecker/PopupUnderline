@@ -42,15 +42,25 @@ Game start :	MArch 16 2015
 			return answer;
 		}
 	} 
-	
 	function addRow(answer) {
+		$("#tableID").find('tbody')
+    			.append($('<tr>')
+        			.append($('<td>')
+                			.text('Image cell')
+            )
+        )
+    );
+		
+		
+	}
+	/*function addRow(answer) {
 		var rowCount = misc.PPVS.rows.length;
 		var row = misc.PPVS.insertRow(answer);
 		var cell = row.insertCell(0);
 		var element = document.createElement("______________________________");
 		cell1.appendChild(element1);
 	}
-	
+	*/
 	/*function addRow(answer) {
          		tabBody = document.getElementsByTagName("TBODY").item(0);
          		row = document.createElement("TR");
