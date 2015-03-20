@@ -21,7 +21,7 @@ Game start :	MArch 16 2015
 	<div></div>
 	<div id="tablePrint"> </div>	
     <div></div>
-    <button onclick="chooseYes()">Yes</button>
+    <button onclick="chooseYes(), addRow()">Yes</button>
     <input type="button" onclick="chooseNo()" value="No"/>
     <script>
     // Willyd trying hard to get used to commiting
@@ -43,12 +43,13 @@ Game start :	MArch 16 2015
 		}
 	} 
 	
-	function addRow(content) {
+	function addRow(answer) {
+		console.log("TESTER");
 			if (!document.getElementsByTagName) return;
          		tabBody=document.getElementsByTagName("TBODY").item(0);
          		row=document.createElement("TR");
         		cell1 = document.createElement("TD");
-         		textnode1=document.createTextNode(content);
+         		textnode1=document.createTextNode(answer);
          		cell1.appendChild(textnode1);
          		row.appendChild(cell1);
          		tabBody.appendChild(row);
