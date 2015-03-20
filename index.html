@@ -44,7 +44,7 @@ Game start :	MArch 16 2015
 	} 
 	function addRow(answer) {
 		var tbl = document.getElementById('#tablePrint'); // table reference
-        	var row = tbl.insertRow(tbl.rows.length);       // append table row
+        	var row = tbl.insertRow/*(tbl.rows.length)*/;       // append table row
         	var i;
     	// insert table cells to the new row
     		for (i = 0; i < tbl.rows[0].cells.length; i++) {
